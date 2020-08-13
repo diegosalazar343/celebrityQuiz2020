@@ -1,13 +1,13 @@
 $(document).ready(function() {
-  // $("introButton").submit(function(event) {
-  //   event.preventDefault();
-  //   const name = $("input#name").val();
-  //   if (name) {
-  //     $("#quiz").show();
-  //   } else {
-  //     alert("Please enter your name!");
-  //   }
-  // });
+  $("form#intro").submit(function(event) {
+    event.preventDefault();
+    const name = $("input#name").val();
+    if (name) {
+      $("#quiz").show();
+    } else {
+      alert("Please enter your name!");
+    }
+  });
 
   $("form").submit(function() { 
   
