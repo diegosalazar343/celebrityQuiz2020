@@ -14,36 +14,91 @@
   <p>Which celebrity match is ideal for you?</p>
 
   <div class="container">
+    <!-- <div id="intro">
+      <label for="name">Name: </label>
+      <input type="text" id="name">
+      <button class="btn btn-primary" type="submit" id="introButton">Take the quiz!</button>
+    </div> -->
+
+  
     <div id="quiz">
       <form>
         <div class="radio">
+          <p>How tall do you prefer your partner?</p>
           <label>
-            <input type="radio" name="" value="" checked>
-            value
+            <input type="radio" name="height" value="spongeBob" checked>
+            3ft
           </label>
         </div>
         <div class="radio">
           <label>
-           <input type="radio" name="" value="" checked>
-           value
+           <input type="radio" name="height" value="bean" >
+           5ft
           </label>
         <div class="radio">
           <label>
-            <input type="radio" name="" value="" checked>
-            value
+            <input type="radio" name="height" value="goblinKing" >
+            6ft
           </label>
+        </div>
+        
+        <p></p>
+        <div class="radio">
+          <p>What's your ideal date?</p>
+          <label>
+            <input type="radio" name="date" value="spongeBob" checked>
+            Jellyfishing
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="date" value="bean">
+            Going to a bar and see what adventure finds us
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="date" value="goblinKing">
+            Go to a David Bowie concert
+            </label>
+          </div>
 
+        <p>Which food do you like least?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="brocolli" checked>
+            Brocolli
+          </label>
         </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="tuna">
+            Tuna
+          </label>
         </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="licorice">
+            Black licorice
+          </label>
+        </div>
+        <button class="btn btn-success" type="submit">Show me my match!</button>
       </form>
     </div><!--quiz-->
 
-    <div id="quizResults" class="row">
-      <img src="img/bean.jpg" alt="Bean from Disenchanted">
-      <img src="img/goblingKing.jpg" alt="The goblin king">
-      <img src="img/sponge.png" alt="a yellow sponge man">
-    </div><!--quizResults-->
-
+    <div id="quizResultBean" class="row">
+      <img src="img/bean.jpg" alt="Bean from Disenchanted" id="bean">
+      <h3>You got Bean!</h3>
+    </div>
+    <div id="quizResultGoblin">
+      <img src="img/goblingKing.jpg" id ="goblin" alt="The goblin king">
+      <h3>You got the goblin king!</h3>
+    </div>
+    <div id="quizResultSponge">
+      <img src="img/sponge.png" id="sponge" alt="a yellow sponge man">
+      <h3>You got Sponge Bob!</h3> 
+    </div>
+    
   </div>
 </body>
 </html>
